@@ -1,4 +1,4 @@
-%%% Demo of the human skill encoding using HMM-GMR encoding method
+%$ Demo of the human skill encoding using HMM-GMR encoding method
 function demo_human_skill_encod_repro
 %% parameters
 model = [];
@@ -17,7 +17,6 @@ model.kV = (2*model.kP)^.5; %Damping gain (with ideal underdamped damping ratio)
 model.sub_name = 'subject B';
 time_flag = 1;
 [PHI,PHI1] = constructPHI(model,nbData,1); %Construct PHI operator (big sparse matrix)
-%%
 %% load marked data in curser.
 load('curser_B.mat');
 [input,target] = prepare_Data_PiH('sEMG_FT_PiH_subjectB_ft_message.csv','','','','sEMG_FT_PiH_subjectB_orange_imu.csv',1);
