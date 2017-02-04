@@ -1,5 +1,5 @@
-%%% Time based HMM GMR encoding demo for chapter 4 -- force without time
-function demo_chapter4_HMM
+%%% Demo of the human skill encoding using HMM-GMR encoding method
+function demo_human_skill_encod_repro
 %% parameters
 model = [];
 model.nbStates = 5; %Number of components in the GMM
